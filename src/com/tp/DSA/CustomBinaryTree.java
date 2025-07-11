@@ -95,6 +95,27 @@ public class CustomBinaryTree {
         }
     }
 
+    public boolean find() {
+        Queue<Node> queue = new LinkedList<>();
+
+        if (root != null) queue.add(root);
+        while (!queue.isEmpty()) {
+            Node n1 = null;
+            Node n2 = null;
+            Node poll = queue.poll();
+            if (poll.right != null) {
+                n1 = poll.right;
+                queue.add(n1);
+            }
+            if (poll.left != null) {
+                n2 = poll.left;
+                queue.add(n2);
+            }
+            if (null != n1 && null != n2 && n1.key + n2.key == 9) return true;
+        }
+        return false;
+    }
+
     public void postOrder() {
         postOrder(root);
     }

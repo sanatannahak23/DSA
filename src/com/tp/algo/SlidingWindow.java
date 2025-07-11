@@ -1,4 +1,4 @@
-package algo;
+package com.tp.algo;
 
 public class SlidingWindow {
 

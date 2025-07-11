@@ -1,5 +1,11 @@
 package com.tp.DSA;
 
+import java.io.FilterOutputStream;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+
 public class Test {
 
     public static void main(String[] args) {
@@ -33,13 +39,16 @@ public class Test {
 
         CustomBinaryTree tree = new CustomBinaryTree();
         tree.add(5);
+        tree.add(2);
         tree.add(6);
+        tree.add(2);
+        tree.add(4);
         tree.add(7);
-        tree.add(8);
-        tree.add(5);
-        tree.remove(5);
+//        tree.levelOrder();
+        System.out.println(tree.find());
+//        tree.remove(5);
 //        System.out.println(tree.size());
-        tree.levelOrder();
+//        tree.levelOrder();
 //        tree.postOrder();
 //        tree.inOrder();
 //        tree.preOrder();

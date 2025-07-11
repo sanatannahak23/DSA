@@ -1,4 +1,4 @@
-package algo;
+package com.tp.algo;
 
 import java.util.ArrayList;
 import java.util.Arrays;

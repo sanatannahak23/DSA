@@ -19,6 +19,7 @@ public class MergeTwoList {
         Integer[] arr2 = {2, 4, 6, 8, 10};
         Stream
                 .concat(Arrays.stream(arr1), Arrays.stream(arr2))
+                .mapToInt(Integer::valueOf)
                 .sorted()
                 .toArray();
 

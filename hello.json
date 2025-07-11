@@ -1,0 +1,17 @@
+{
+  "allocationModel": "AllocationPool",
+  "computeCapacity": {
+    "cpu": {
+      "units": "MHz",
+      "pricing": {
+        "unitPrice": 20.0
+      }
+    },
+    "memory": {
+      "units": "MB",
+      "pricing": {
+        "unitPrice": 10.0
+      }
+    }
+  }
+}

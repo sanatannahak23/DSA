@@ -1,10 +1,10 @@
 package com.tp.stream;
 
 public class Employee {
-    private int id;
+    private Integer id;
     private String name;
-    private int age;
-    private double salary;
+    private Integer age;
+    private Double salary;
 
     public Employee(int id, String name, int age, double salary) {
         this.id = id;

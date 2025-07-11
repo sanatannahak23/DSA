@@ -1,5 +1,7 @@
 package com.tp.stream;
 
+import java.io.File;
+import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,6 +21,14 @@ public class CheckPrime {
         boolean isPrime = numbers
                 .stream()
                 .anyMatch(CheckPrime::isPrime);
-        System.out.println(isPrime);
+//        System.out.println(isPrime);
+
+        Class<Employee> clazz = Employee.class;
+        Field[] fields = clazz.getDeclaredFields();
+
+        for (Field field:fields){
+            System.out.println("Filed name :: "+field.getName());
+            System.out.println("Field type :: "+field.getType());
+        }
     }
 }

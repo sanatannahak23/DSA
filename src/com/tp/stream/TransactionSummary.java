@@ -19,7 +19,8 @@ public class TransactionSummary {
         );
 
         Map<String, Double> collect = transactions.stream()
-                .collect(Collectors.groupingBy(Transaction::getUserId, Collectors.summingDouble(Transaction::getAmount)));
+                .collect(Collectors.groupingBy(Transaction::getUserId,
+                        Collectors.summingDouble(Transaction::getAmount)));
         System.out.println(collect);
 
     }

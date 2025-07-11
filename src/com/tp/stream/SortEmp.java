@@ -46,12 +46,9 @@ public class SortEmp {
                 .stream()
                 .sorted(Comparator.comparingDouble(entry -> entry.getKey().getSalary()))
                 .collect(Collectors.toMap(
-
-
-
                         Map.Entry::getKey,
                         Map.Entry::getValue,
-                        (s, s2) -> s,
+                        (s, _) -> s,
                         LinkedHashMap::new)
                 );
 

@@ -81,7 +81,7 @@ public class CustomLinkedList<T> {
 
     public void reverse() {
         Node curr = root;
-        Node next = null;
+        Node next;
         Node prev = null;
         while (curr != null) {
             next = curr.next;
@@ -99,5 +99,9 @@ public class CustomLinkedList<T> {
             System.out.print(curr.key + "\t");
             curr = curr.next;
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Once upon a time");
     }
 }
